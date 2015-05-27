@@ -87,7 +87,7 @@ main (int argc, char* argv[])
       t = stopwatch_stop (timer);
       cerr << " done. [dummy=" << dummy << "]" << endl;
 
-      cout << n << ' ' << stride << ' ' << (t / num_reads / num_trials)/2.67e-9 << endl;
+      cout << n << ' ' << stride << ' ' << t / num_reads / num_trials << endl;
     } // stride
     cout << endl << endl;
   } // n
